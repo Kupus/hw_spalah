@@ -1,8 +1,7 @@
 <?php
 session_start();
 $index = $_SERVER ['SCRIPT_NAME'];
-$index = explode('/', $index );
-$index = $index['3'];
+$index = basename($index);
 $_SESSION['index_1'] = $index;
 ?>
 
